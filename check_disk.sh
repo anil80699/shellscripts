@@ -12,3 +12,7 @@ do
          echo "CRITICAL for $file_sys on $backup_date"
  fi
 done
+
+------------------------------------------------------------------------------------
+# to add the job in crontab; crontab -e
+# * * * * * bash /home/ubuntu/shellscripts/check_disk.sh >> /home/ubuntu/cron_backup
